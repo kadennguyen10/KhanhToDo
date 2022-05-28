@@ -11,7 +11,7 @@
 </head>
 <body class="container col-lg-4">
     <h1 class="mt-5">
-        Vue TodoMVC
+        Kumon Attendance
     </h1>
 
     <!-- This div, with the ID "app", is where the application appears when it runs. -->
@@ -26,8 +26,8 @@
                 <label v-on:click="showComplete = !showComplete">
 
                     <!-- The v-model attribute causes the checkdness of this box to always mirror the application's state  -->
-                    <input type="checkbox" v-model="showComplete">
-                    Show Completed
+                    <div v-model="showComplete">
+                    Absence List.  Click your name to check in
                 </label>
             </h4>
 
@@ -59,13 +59,13 @@
                         type="text"
                         v-model="text"
                         class="form-control"
-                        placeholder="Add new!">
+                        placeholder="Add new student!">
 
                 <!-- Note the property :disabled. It begins with a colon (:), indicating that Vue should interpret the value as an expression, and not a string.-->
                 <button
                         :disabled="submitIsDisabled"
                         class="btn btn-primary mt-2">
-                    Add Todo
+                    Add Student
                 </button>
             </form>
         </section>

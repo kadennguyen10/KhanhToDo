@@ -10,15 +10,19 @@
  */
 let todos = [
     {
-        name: "Debug UI",
+        name: "Khanh Nguyen",
         complete: false,
     },
     {
-        name: "Refactor build step",
-        complete: true,
+        name: "Tung Hoang",
+        complete: false,
     },
     {
-        name: "Upgrade Component",
+        name: "Toan Hoang",
+        complete: false,
+    },
+    {
+        name: "Long Nguyen",
         complete: false,
     },
 ];
@@ -46,7 +50,7 @@ new Vue({
     data: () => ({
         todos,
         text: ``,
-        showComplete: true,
+        showComplete: false,
     }),
 
     /**
