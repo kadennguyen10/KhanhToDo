@@ -22,6 +22,10 @@ let todos = [
         complete: false,
     },
     {
+        name: "Jimmy Lee",
+        complete: false,
+    },
+    {
         name: "Long Nguyen",
         complete: false,
     },
